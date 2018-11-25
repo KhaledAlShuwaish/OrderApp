@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountActivity.recycleview.Recycle2"
+    android:background="@drawable/new1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="خضار"
+            android:textColor="@color/Black"
+            android:textSize="30sp" />
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="70dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="فواكه"
+            android:textColor="@color/Black"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:gravity="top">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycleView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        >
+
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="top">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycleView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top">
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الفروع :"
+            android:layout_gravity="center"
+            android:textSize="25sp"/>
+        <ListView
+
+            android:id="@+id/list3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="الحساب"
+            android:background="@drawable/buttonstyle"
+
+            android:textColor="@color/Black"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/DoneBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+
+            android:background="@drawable/sendbutton"
+            android:layout_marginTop="20dp"
+
+            android:text="اتمام الشراء"
+            android:textColor="@color/whiteeee"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

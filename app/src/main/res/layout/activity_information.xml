@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity.InformationActivity"
+    android:background="@drawable/new1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/Black"
+
+            android:gravity="center"
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="welcome"
+            android:textSize="30sp"/>
+
+
+        <TextView
+            android:textColor="@color/Black"
+
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter more information"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                />
+
+            <EditText
+
+                android:id="@+id/name"
+                android:background="@drawable/edit"
+                android:layout_height="40dp"
+
+                android:layout_width="match_parent"
+                android:hint="@string/name"
+                android:textColor="@color/input_login"
+                android:gravity="center"/>
+
+
+            <TextView
+                android:textColor="@color/Black"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+
+                />
+            <EditText
+
+                android:id="@+id/phoneN"
+                android:layout_width="match_parent"
+                android:hint="@string/PhoneNumber"
+                android:background="@drawable/edit"
+                android:layout_height="40dp"
+                android:imeOptions="actionUnspecified"
+                android:textColor="@color/input_login"
+                android:gravity="center"/>
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_gravity="center">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical"-->
+                    <!--android:paddingRight="60dp">-->
+
+                    <!--<TextView-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Branch Name 1 "-->
+                        <!--/>-->
+                    <!--<EditText-->
+                        <!--android:id="@+id/Branch1"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/BranchName"-->
+                        <!--android:imeOptions="actionUnspecified"-->
+                        <!--android:textColor="@color/input_login" />-->
+                    <!--<TextView-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Branch Name 2 "-->
+                        <!--/>-->
+                    <!--<EditText-->
+                        <!--android:id="@+id/Branch2"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/BranchName"-->
+                        <!--android:imeOptions="actionUnspecified"-->
+                        <!--android:textColor="@color/input_login" />-->
+
+                    <!--<TextView-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Branch Name 3 "-->
+                        <!--/>-->
+                    <!--<EditText-->
+                        <!--android:id="@+id/Branch3"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/BranchName"-->
+                        <!--android:imeOptions="actionUnspecified"-->
+                        <!--android:textColor="@color/input_login" />-->
+
+
+                <!--</LinearLayout>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Branch Name 4 "-->
+                        <!--/>-->
+                    <!--<EditText-->
+                        <!--android:id="@+id/Branch4"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/BranchName"-->
+                        <!--android:imeOptions="actionUnspecified"-->
+                        <!--android:textColor="@color/input_login" />-->
+                    <!--<TextView-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Branch Name 5 "-->
+                        <!--/>-->
+                    <!--<EditText-->
+                        <!--android:id="@+id/Branch5"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/BranchName"-->
+                        <!--android:imeOptions="actionUnspecified"-->
+                        <!--android:textColor="@color/input_login" />-->
+                    <!--<TextView-->
+                        <!--android:textSize="15sp"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Branch Name 6 "-->
+                        <!--/>-->
+                    <!--<EditText-->
+                        <!--android:id="@+id/Branch6"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:hint="@string/BranchName"-->
+                        <!--android:imeOptions="actionUnspecified"-->
+                        <!--android:textColor="@color/input_login" />-->
+
+                <!--</LinearLayout>-->
+
+
+
+            <!--</LinearLayout>-->
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Send"
+                android:background="@drawable/sendbutton"
+                android:textColor="@color/whiteeee"
+                android:layout_marginTop="0dp"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="0dp" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

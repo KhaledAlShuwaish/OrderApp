@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.firebaseloginapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AccountActivity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AccountActivity.MainActivity" />
+        <activity android:name=".AccountActivity.SignupActivity" />
+        <activity android:name=".AccountActivity.ResetPasswordActivity" />
+        <activity android:name=".AccountActivity.InformationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.firebaseloginapp.AccountActivity.MainActivity" />
+        </activity>
+        <activity android:name=".AccountActivity.DataRetrieved" />
+        <activity android:name=".AccountActivity.recycleview.OrderActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.firebaseloginapp.AccountActivity.MainActivity" />
+        </activity>
+        <activity android:name=".AccountActivity.recycleview.Recycle2" />
+        <activity android:name=".AccountActivity.DataBase1.EditorActivity" />
+        <activity android:name=".AccountActivity.DataBase1.MenuActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.firebaseloginapp.AccountActivity.MainActivity" />
+        </activity>
+        <activity android:name=".AccountActivity.DataBase1.Menu2Activity" />
+        <activity android:name=".AccountActivity.DataBase1.InsertActivity" />
+        <activity android:name=".AccountActivity.DataBase1.ShowBranchActivity" />
+
+        <provider
+            android:name=".AccountActivity.DataBase1.data.BranchProvider"
+            android:authorities="com.firebaseloginapp.AccountActivity.DataBase1"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".AccountActivity.recycleview.History">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.firebaseloginapp.AccountActivity.MainActivity" />
+        </activity>
+        <activity android:name=".AccountActivity.Complaint">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.firebaseloginapp.AccountActivity.recycleview.History" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCGPhOQqklA1AkKDarIGUEnVrldFOOI-FQ" />
+
+        <activity android:name=".AccountActivity.Main2Activity"></activity>
+    </application>
+
+</manifest>

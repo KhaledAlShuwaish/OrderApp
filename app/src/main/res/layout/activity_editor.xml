@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountActivity.DataBase1.EditorActivity"
+    android:background="@drawable/new1">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Name"
+        android:textColor="#085bb9" />
+
+    <!-- Name field -->
+    <EditText
+        android:textColor="@color/Black"
+
+        android:id="@+id/edit_branch_name"
+        android:layout_width="200dp"
+
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="name"
+        android:background="@drawable/edit"
+        android:inputType="textCapWords" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Location"
+        android:textColor="#085bb9" />
+
+    <EditText
+        android:textColor="@color/Black"
+        android:id="@+id/edit_branch_SupplierEmail"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="Location"
+        android:inputType="textCapWords"
+        android:background="@drawable/edit"
+
+        />
+
+    <fragment
+        android:id="@+id/place_autocomplete_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        />
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+
+</LinearLayout>

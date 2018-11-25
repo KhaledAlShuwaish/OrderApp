@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <!--<android.support.v7.widget.CardView-->
+
+        <!--android:layout_margin="@dimen/cardview_compat_inset_shadow"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@drawable/edit">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/edit"
+            >
+
+
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout"
+                android:padding="@dimen/cardview_default_radius"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_gravity="center"
+
+                    android:id="@+id/TextViewHeading"
+                    android:layout_width="128dp"
+                    android:layout_height="wrap_content"
+                    android:text="heading"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/colorPrimary"/>
+
+                <LinearLayout
+                    android:layout_gravity="right"
+                    android:layout_marginRight="70dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ريال"
+                        android:paddingRight="4dp"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"                        />
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:id="@+id/TextViewDisc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disc"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorPrimary"                        />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/leftB"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/mainbutton"
+                    android:textColor="@color/whiteeee"
+                    android:text="-"/>
+                <TextView
+                    android:layout_gravity="center"
+
+                    android:id="@+id/counter"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/Black"
+                    android:background="@drawable/edit"/>
+                <Button
+                    android:layout_gravity="center"
+                    android:text="+"
+                    android:background="@drawable/mainbutton"
+                    android:textColor="@color/whiteeee"
+                    android:id="@+id/righB"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+</LinearLayout>

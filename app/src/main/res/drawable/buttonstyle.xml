@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+<solid android:color="@color/whiteeee"/>
+    <corners android:radius="90dp"/>
+
+    <item android:state_focused="true" android:state_pressed="true"
+        style="@style/textbold" />
+    <item android:state_focused="false" android:state_pressed="true"
+        style="@style/textregular" />
+
+    <stroke
+        android:width="3dp"
+        android:color="@color/Black"
+
+        />
+
+    <item style="@style/textregular" />
+</shape>
+
+

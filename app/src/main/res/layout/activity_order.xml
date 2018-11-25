@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountActivity.recycleview.OrderActivity"
+    android:orientation="vertical"
+    android:background="@drawable/new1"
+
+   >
+
+
+
+
+    <Button
+        android:background="@drawable/sendbutton"
+        android:textColor="@color/whiteeee"
+        android:id="@+id/Back"
+        android:text="Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/Vege"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:background="@drawable/chose"
+            android:theme="@style/MyButton"
+            android:text="خضار"
+
+            android:textColor="@color/whiteeee"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/Fruts"
+            android:textColor="@color/whiteeee"
+
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:text="فواكة"
+            android:background="@drawable/chose"
+            android:theme="@style/MyButton"
+
+            android:textSize="40sp"/>
+
+        <Button
+            android:id="@+id/Button"
+
+            android:textColor="@color/whiteeee"
+            android:background="@drawable/sendbutton"
+            android:layout_marginTop="20dp"
+            android:text="إتمام الشراء"
+            android:textSize="17sp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycleView">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
